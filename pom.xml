@@ -18,6 +18,7 @@
 		<jackson.version>1.9.12</jackson.version>
 		<commons.lang.version>2.6</commons.lang.version>
 		<commons.collections.version>3.2.1</commons.collections.version>
+		<guava.version>14.0.1</guava.version>
 	</properties>
 	<build>
 		<finalName>neo4j-persister-service</finalName>
@@ -108,6 +109,12 @@
 			<artifactId>hamcrest-all</artifactId>
 			<scope>test</scope>
 			<version>${hamcrest.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.google.guava</groupId>
+		    <artifactId>guava</artifactId>
+		    <version>${guava.version}</version>
+		    <scope>test</scope>
 		</dependency>
 		<!-- Utils -->
 		<dependency>

@@ -12,6 +12,7 @@ import sun.reflect.ReflectionFactory;
 
 final class JacksonMapper implements Mapper {
 	private final ObjectMapper mapper = new ObjectMapper();
+	
 	@Override
 	public <T> Map<String, Object> toMap(T value) {
 		@SuppressWarnings("unchecked")
